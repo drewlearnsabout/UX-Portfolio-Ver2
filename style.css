@@ -482,13 +482,17 @@ nav {
 }
 @media screen and (max-width: 600px) {
     header {
-        height: 23vh;
+        height: 25vh;
     }
     #homeHeader section {
         grid-template-rows: 10.3vh 2vh 0vh;
     }
     #section2, #section3 {
-        grid-template-rows: 10.3vh 0vh 1vh 0vh;
+        grid-template-rows: 10.3vh 1vh 1vh 0vh;
+    }
+    #adWebsite {
+        width: 12.5vw;
+        padding-top: 0.5vh;
     }
     nav a {
         font-size: 4vw;
