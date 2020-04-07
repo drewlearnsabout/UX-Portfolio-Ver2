@@ -491,32 +491,42 @@ nav {
         grid-template-rows: 10.3vh 1vh 1vh 0vh;
     }
     #adWebsite {
-        width: 12.5vw;
+        width: 14vw;
         padding-top: 0.5vh;
     }
     nav a {
-        font-size: 4vw;
+        font-size: 3.7vw;
     }
-    #firstSection {
-        transform: scale(1.5) translateY(5vh);
+    #introParagraph {
+        width: 45vw;
+    }
+    #portrait {
+        width: 28vw;
+    }
+    #first div {
+        transform: scale(1.2);
+        font-size: 2vw;
     }
     #second {
         grid-template-columns: 1fr;
         column-gap: 0;
         grid-template-rows: auto auto auto;
-        transform: scale(1.5);
+        transform: scale(2);
+        margin-top: 10vh;
     }
     #contentSentence {
-        font-size: 2.8vw;
-        margin-top: 3vh;
+        font-size: 6vw;
+        margin-top: 10vh;
     }
     #third {
-        transform: scale(1.5);
-        grid-template-columns: 1fr 1fr;
+        margin-top: 5vh;
+        transform: scale(2);
+        grid-template-columns: 1fr;
         row-gap: 1vh;
+        width: 35vw;
     }
     #third button {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
     #uxButton {
         padding: 0.5vh 1.5vw;
@@ -526,7 +536,7 @@ nav {
     }
     #secondSection {
         height: 15.5vh;
-        margin-top: 25vh;
+        margin-top: 12vh;
     }
     #secondSection section {
         padding-top: 2vh;
@@ -580,5 +590,92 @@ nav {
     #textBox {
         height: 9vh;
         width: 100%;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    header {
+        height: 27vh;
+    }
+    #homeHeader section {
+        grid-template-rows: 10.3vh 2vh 0vh;
+    }
+    #section2, #section3 {
+        grid-template-rows: 10.3vh 1vh 1vh 0vh;
+    }
+    #adWebsite {
+        width: 14vw;
+        padding-top: 0.5vh;
+    }
+    #secondSection {
+        height: 15.5vh;
+        margin-top: 12vh;
+    }
+    #secondSection section {
+        padding-top: 0vh;
+    }
+    #contactMenu {
+        max-width: 60vw;
+    }
+    #contactMenuGrid input {
+        height: 5vh;
+        width: 35vw;
+        padding-left: 1vw;
+    }
+    #contactHeader {
+        font-size: 3.5vw;
+    }
+    .formText {
+        font-size: 3vw;
+    }
+    #textBox {
+        height: 9vh;
+        width: 100%;
+    }
+    #submit {
+        font-size: 2.5vw;
+    }
+    #webDesignSection2 h2, #UXsection h2 {
+        font-size: 5vw;
+        margin: 5vh 0 5vh 0;
+    } 
+    #websiteThumbnails p, #UXsection div p {
+        font-size: 3.5vw;
+    }
+        #contentSentence {
+        font-size: 5vw;
+        margin-top: 10vh;
+    }
+    #third {
+        margin-top: 5vh;
+        transform: scale(1.2);
+        grid-template-columns: 1fr;
+        row-gap: 1vh;
+        width: 35vw;
+    }
+    #third button {
+        font-size: 3vw;
+    }
+    #introParagraph {
+        width: 40vw;
+        grid-area: paragraph;
+    }
+    #portrait { 
+        width: 25vw;
+        grid-area: portrait1;
+        align-self: start;
+    }
+    #first div { 
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 2vw;
+        color: #00034A;
+        grid-area: email;
+    }
+    #second {
+        transform: scale(1.3);
     }
 }
