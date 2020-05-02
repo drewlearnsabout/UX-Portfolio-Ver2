@@ -38,6 +38,12 @@
 <line x1="329.5" y1="205.5" x2="458.5" y2="205.5" stroke="#F6F6F6" stroke-width="3" stroke-linecap="round"/>
 <line x1="466.5" y1="12.5" x2="466.5" y2="212.5" stroke="#F6F6F6" stroke-width="3" stroke-linecap="round"/>
 <line x1="336.5" y1="212.5" x2="465.5" y2="212.5" stroke="#F6F6F6" stroke-width="3" stroke-linecap="round"/>
+<rect x="359" y="108" width="5" height="23" fill="#F29E9E"/>
+<rect x="367" y="98" width="5" height="33" fill="#F29E9E"/>
+<rect x="388" y="91" width="5" height="40" fill="#E8BCA4"/>
+<rect x="410" y="94" width="5" height="37" fill="#47B5CD"/>
+<rect x="380" y="121" width="5" height="10" fill="#E8BCA4"/>
+<rect x="401" y="114" width="5" height="17" fill="#47B5CD"/>
 </g>
 <defs>
 <filter id="filter0_d" x="0" y="0" width="296" height="227" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
