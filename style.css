@@ -14,17 +14,11 @@ body {
         ". Name Name Name Name . Nav .";
 }
 header {
-    background-color: #00034A;
-    color: #ffffff;
+    color: #0C0C0C;
     box-shadow: 2px 2px 2px solid gray;
     height: 70vh;
     display: grid;
     grid-template-rows: 98% 2%;
-}
-#line {
-    height: 0.5vh;
-    width: 100%;
-    background-color: #ffffff;
 }
 header img {
     width: 13.5vw;
@@ -43,7 +37,7 @@ header h1 {
 }
 nav a {
     text-decoration: none;
-    color: white;
+    color: #0C0C0C;
     font-size: 3vw;
     transition: ease 0.3s;
 }
@@ -60,14 +54,14 @@ nav {
 #firstSection {
     display: grid;
     justify-items: center;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
 #contentSentence {
     font-size: 2.4vw;
-    font-weight: bold;
+    font-weight: bolder;
     display: grid;
-    justify-self: start;
-    margin-left: 22vw;
+    justify-self: center;
+    margin-top: 15vh;
 }
 #first {
     display: grid;
@@ -118,32 +112,35 @@ nav {
     transform: scale(1.2);
 }
 #second {
-    margin-top: 5vh;
-    font-size: 2vw;
+    margin-top: 20vh;
+    font-size: 1.7vw;
     color: #00034A;
     display: grid;
-    grid-template-columns: 30fr 50fr 30fr;
+    grid-template-columns: 30fr 35fr 30fr;
     column-gap: 5vw;
 }
 #second a {
-    display: flex;
+    display: grid;
+    justify-items: center;
     text-decoration: none;
     color: #00034A;
+    background-color: #F6F6F6;
+    box-shadow: 0px 2px 5px rgb(80, 80, 80);
+    border-radius: 30px;
+    transition: ease 0.3s;
+}
+#second a:hover {
+    transform: scale(1.1) translate(0, -10px);
+    font-weight: bold;
+}
+#contactButton, #linkedButton {
+    padding: 4vh 5vw 0vh 5vw;
+}
+#instagramButton {
+    padding: 4vh 0vw 0vh 0vw;
 }
 #second img {
-    width: 3.5vw;
-    padding-right: 1vw;
-    transition: ease 0.3s;
-}
-#second img:hover {
-    transform: scale(1.2);
-}
-#second p {
-    transition: ease 0.3s;
-}
-#second p:hover {
-    transform: scale(1.05);
-    font-weight: bold;
+    width: 5vw;
 }
 #third {
     display:grid;
@@ -157,7 +154,7 @@ nav {
     color: #ffffff;
     background-color: #00034A;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 2px 2px 2px gray;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -165,17 +162,17 @@ nav {
     transition: ease 0.3s;
 }
 #third button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #third a {
     text-decoration: none;
     color: #ffffff;
 }
 #uxButton {
-    padding: 2vh 1.5vw;
+    padding: 2vh 4.5vw;
 }
 #webButton {
-    padding: 2vh 2.9vw;
+    padding: 2vh 3vw;
 }
 #secondSection {
     margin-top: 13vh;
@@ -257,7 +254,7 @@ nav {
 
 #section2  {
     display: grid;
-    grid-template-columns: 14fr 2.5fr 4.9fr 7fr 8fr 7.5fr 14fr;
+    grid-template-columns: 14fr 2.5fr 4.9fr 7fr 15fr 7.5fr 14fr;
     grid-template-rows: 23.3vh 2vh 4vh 0vh;
     grid-template-areas:
         ". . . . . . . "
@@ -283,23 +280,9 @@ nav {
 }
 #ads {
     grid-area: ads;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1.5vh;
 }
-#adWebsite {
-    grid-area: 1 / 1 / 3 / 2;
-    width: 12.5vw;
-    padding-top: 2.5vh;
-}
-#adLogo {
-    width: 16.5vw;
-    grid-area: 1 / 2 / 2 / 3;
-}
-#adLaptop {
-    width: 16.5vw;
-    grid-area: 2 / 2 / 3 / 3;
+#ads img {
+    width: 32vw;
 }
 #lowerHalf {
     display: grid;
@@ -346,7 +329,7 @@ nav {
 
 #section3  {
     display: grid;
-    grid-template-columns: 14fr 2.5fr 4.9fr 7fr 8fr 7.5fr 14fr;
+    grid-template-columns: 14fr 2.5fr 4.9fr 7fr 15fr 7.5fr 14fr;
     grid-template-rows: 23.3vh 2vh 4vh 0vh;
     grid-template-areas:
         ". . . . . . . "
@@ -372,18 +355,9 @@ nav {
 }
 #UXlogos {
     grid-area: UXlogos;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: "prototypeLogo articleLogo";
-    column-gap: 2vw;
 }
-#prototypeLogo {
-    width: 20vw;
-    grid-area: prototypeLogo;
-}
-#articleLogo {
-    width: 12vw;
-    grid-area: articleLogo;
+#UXlogos img {
+    width: 37vw;
 }
 #UXsection {
     grid-area: stuff;
@@ -487,6 +461,9 @@ nav {
     #homeHeader section {
         grid-template-rows: 10.3vh 2vh 0vh;
     }
+    #firstSection {
+        margin-top: 5vh;
+    }
     #section2, #section3 {
         grid-template-rows: 10.3vh 1vh 1vh 0vh;
     }
@@ -503,6 +480,10 @@ nav {
     #portrait {
         width: 28vw;
     }
+    #first {
+        display: grid;
+        grid-template-columns: 50% 60%;
+    }
     #first div {
         transform: scale(1.2);
         font-size: 2vw;
@@ -510,9 +491,25 @@ nav {
     #second {
         grid-template-columns: 1fr;
         column-gap: 0;
+        row-gap: 3vh;
         grid-template-rows: auto auto auto;
-        transform: scale(2);
+        transform: scale(1);
         margin-top: 10vh;
+    }
+    #second a {
+        border-radius: 15px;
+    }
+    #contactButton, #linkedButton {
+        padding: 4vh 5vw 0vh 5vw;
+    }
+    #instagramButton {
+        padding: 4vh 3vw 0vh 3vw;
+    }
+    #second img {
+        width: 12vw;
+    }
+    #second p {
+        font-size: 4vw;
     }
     #contentSentence {
         font-size: 6vw;
@@ -520,7 +517,7 @@ nav {
     }
     #third {
         margin-top: 5vh;
-        transform: scale(2);
+        transform: scale(1.6);
         grid-template-columns: 1fr;
         row-gap: 1vh;
         width: 35vw;
@@ -535,11 +532,17 @@ nav {
         padding: 0.5vh 2.9vw;
     }
     #secondSection {
-        height: 15.5vh;
+        height: 20.5vh;
         margin-top: 12vh;
     }
     #secondSection section {
         padding-top: 2vh;
+    }
+    #secondSection section h2 {
+        font-size: 6vw;
+    }
+    #secondSection section a {
+        font-size: 5vw;
     }
     #websiteThumbnails {
         display: grid;
@@ -572,6 +575,9 @@ nav {
     }
     #thirdSection {
         margin: 3vh 0;
+    }
+    #thirdSection h2, #thirdSection a, #thirdSection p {
+        transform: scale(1.5);
     }
     #contactMenu {
         max-width: 80vw;
@@ -610,7 +616,7 @@ and (max-device-width : 1024px) {
         padding-top: 0.5vh;
     }
     #secondSection {
-        height: 15.5vh;
+        height: 30.5vh;
         margin-top: 12vh;
     }
     #secondSection section {
