@@ -54,7 +54,7 @@ nav {
 #firstSection {
     display: grid;
     justify-items: center;
-    margin-top: 15vh;
+    margin-top: 30vh;
 }
 #contentSentence {
     font-size: 2.4vw;
