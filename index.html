@@ -22,6 +22,10 @@
                 </nav>
             </section>
         </header>
+        <div id="downArrow">
+            <img src="Down arrow.svg">
+            <p>Scroll Down</p>
+        </div>
         <section id="firstSection">
             <section id="first">
                 <img id="introParagraph" src="IntroParagraph.svg" alt="Hello! I am a web and user experience designer that blends behavior analysis and design to create simple yet engaging digital environments. Welcome to my site!">
@@ -100,4 +104,16 @@
             <a href="#" rel="modal:close">Close</a>
         </form>
     </body>
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("downArrow").style.opacity = "1";
+        } else {
+            document.getElementById("downArrow").style.opacity = "0";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
 </html>
