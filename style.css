@@ -313,6 +313,9 @@ nav {
     display: grid;
     row-gap: 10vh;
 }
+#websiteThumbnails div img {
+    width: 60%;
+}
 #webDesignSection2 h2 {
     margin: 10vh 0 10vh 0;
     font-size: 3vw;
