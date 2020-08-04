@@ -159,28 +159,29 @@ nav {
 #third {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5vw;
+    column-gap: 4vw;
 }
 #third button {
     font-family: 'Oswald', sans-serif;
     font-size: 2vw;
-    font-weight: bold;
+    font-weight: initial;
+    color: #00034A;
+    background-color: #f6f6f6;
     border: none;
-    border-radius: 15px;
-    background-color: #F6F6F6;
-    box-shadow: 0px 2px 5px rgb(80, 80, 80);
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px gray;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     cursor: pointer;
     transition: ease 0.3s;
 }
 #third button:hover {
     transform: scale(1.1);
+    font-weight: bold;
 }
-#third button a {
+#third a {
     text-decoration: none;
-    color: #292929;
-    transform: translateX(50%);
+    color: #00034A;
 }
 #uxButton {
     padding: 2vh 4.5vw;
@@ -268,7 +269,7 @@ nav {
 
 #section2  {
     display: grid;
-    grid-template-columns: 14fr 2.5fr 4.9fr 7fr 15fr 7.5fr 14fr;
+    grid-template-columns: 14fr 2.5fr 3.5fr 5.2fr 0fr 4fr 14fr;
     grid-template-rows: 23.3vh 2vh 4vh 0vh;
     grid-template-areas:
         ". . . . . . . "
@@ -343,7 +344,7 @@ nav {
 
 #section3  {
     display: grid;
-    grid-template-columns: 14fr 2.5fr 4.9fr 7fr 15fr 7.5fr 14fr;
+    grid-template-columns: 14fr 2.5fr 4.7fr 4fr 0fr 4fr 14fr;
     grid-template-rows: 23.3vh 2vh 4vh 0vh;
     grid-template-areas:
         ". . . . . . . "
@@ -541,7 +542,6 @@ nav {
     }
     #third button {
         font-size: 3vw;
-        border-radius: 15px;
     }
     #uxButton {
         padding: 0.5vh 1.5vw;
